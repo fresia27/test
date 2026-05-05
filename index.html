@@ -1,661 +1,228 @@
-{\rtf1\ansi\ansicpg950\cocoartf2709
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\froman\fcharset0 Times-Roman;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red251\green0\blue7;\red163\green75\blue10;
-\red45\green101\blue22;\red16\green60\blue192;\red83\green56\blue150;}
-{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c100000\c0\c0;\cssrgb\c70588\c37255\c2353;
-\cssrgb\c21961\c46275\c11373;\cssrgb\c6667\c33333\c80000;\cssrgb\c40392\c30588\c65490;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\deftab720
-\pard\pardeftab720\partightenfactor0
-
-\f0\fs29\fsmilli14667 \cf0 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 <!DOCTYPE html>
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 <html lang="zh-TW">
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 <head>
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0<meta charset="UTF-8">
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0<meta name="viewport" content="width=device-width, initial-scale=1.0">
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0<title>\cf3 \strokec3 \uc0\u23567 \u19968 \u25976 \u23416 \u25945 \u32946 \u23526 \u39511 \u32178 \u38913 \u32034 \u24341 \cf0 \strokec2 </title>
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0<style>
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0* \{
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0margin: 0;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0padding: 0;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0box-sizing: border-box;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}
-\f1\fs24 \
-\
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0body \{
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0font-family: 'Arial', sans-serif;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0background: #f5f5f5;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0min-height: 100vh;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0display: flex;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0flex-direction: column;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0justify-content: center;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0align-items: center;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0color: #333;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0padding: 2rem;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}
-\f1\fs24 \
-\
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0.container \{
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0text-align: center;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0width: 100%;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0max-width: 1200px;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}
-\f1\fs24 \
-\
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0h1 \{
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0font-size: 3rem;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0margin-bottom: 1rem;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0color: #2c3e50;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0font-weight: 300;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0letter-spacing: 2px;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}
-\f1\fs24 \
-\
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0.subtitle \{
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0font-size: 1.4rem;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0margin-bottom: 4rem;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0color: #7f8c8d;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0font-weight: 300;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}
-\f1\fs24 \
-\
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0.button-grid \{
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0display: grid;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0grid-template-columns: repeat(4, 1fr);
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0gap: 5rem;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0max-width: 1200px;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0margin: 0 auto;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}
-\f1\fs24 \
-\
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0.demo-button \{
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0padding: 3rem 2rem;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0border: 2px solid #ddd;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0border-radius: 8px;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0font-size: 3rem;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0font-weight: normal;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0cursor: pointer;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0transition: all 0.2s ease;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0text-decoration: none;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0display: flex;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0align-items: center;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0justify-content: center;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0min-height: 200px;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0color: white;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0background: #fff;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}
-\f1\fs24 \
-\
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0.demo-button:hover \{
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0transform: translateY(-2px);
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0border-color: #bbb;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}
-\f1\fs24 \
-\
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0.demo-button:active \{
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0transform: translateY(0);
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}
-\f1\fs24 \
-\
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0.button-mic \{
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0background: #e74c3c;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0border-color: #c0392b;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}
-\f1\fs24 \
-\
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0.button-mic:hover \{
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0background: #c0392b;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}
-\f1\fs24 \
-\
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0.button-one \{
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0background: #3498db;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0border-color: #2980b9;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}
-\f1\fs24 \
-\
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0.button-one:hover \{
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0background: #2980b9;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}
-\f1\fs24 \
-\
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0.button-two \{
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0background: #2ecc71;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0border-color: #27ae60;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}
-\f1\fs24 \
-\
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0.button-two:hover \{
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0background: #27ae60;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}
-\f1\fs24 \
-\
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0.button-three \{
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0background: #9b59b6;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0border-color: #8e44ad;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}
-\f1\fs24 \
-\
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0.button-three:hover \{
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0background: #8e44ad;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}
-\f1\fs24 \
-\
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0.footer \{
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0margin-top: 4rem;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0color: #95a5a6;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0font-size: 1rem;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0font-weight: 300;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}
-\f1\fs24 \
-\
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0/* \uc0\u24179 \u26495 \u27243 \u23631 \u20778 \u21270  */
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0@media (orientation: landscape) and (min-width: 768px) and (max-width: 1024px) \{
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0body \{
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0padding: 1rem;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0h1 \{
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0font-size: 2.5rem;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0margin-bottom: 0.5rem;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0.subtitle \{
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0font-size: 1.2rem;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0margin-bottom: 2rem;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0.button-grid \{
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0gap: 3rem;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0max-width: 1000px;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0.demo-button \{
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0min-height: 160px;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0font-size: 2.5rem;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0padding: 2rem 1.5rem;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0.footer \{
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0margin-top: 2rem;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0font-size: 0.9rem;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}
-\f1\fs24 \
-\
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0/* \uc0\u25163 \u27231 \u30452 \u23631 \u20633 \u29992  */
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0@media (max-width: 767px) \{
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0.button-grid \{
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0grid-template-columns: repeat(2, 1fr);
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0gap: 1.5rem;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0max-width: 400px;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0h1 \{
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0font-size: 2rem;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0.demo-button \{
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0min-height: 120px;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0font-size: 2rem;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}
-\f1\fs24 \
-\
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0/* \uc0\u22823 \u23631 \u24149 \u20778 \u21270  */
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0@media (min-width: 1025px) \{
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0.button-grid \{
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0gap: 6rem;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0.demo-button \{
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0min-height: 220px;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0font-size: 3.5rem;
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0</style>
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 </head>
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 <body>
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0<div class="container">
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0<h1>\cf3 \strokec3 \uc0\u23567 \u19968 \u25976 \u23416 \u25945 \u32946 \u23526 \u39511 \cf0 \strokec2 </h1>
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0<p class="subtitle">\uc0\u35531 \u36984 \u25799 \u23526 \u39511 \u20998 \u38913 </p>
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0<div class="button-grid">
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf4 \strokec4 <a href="https://www.google.com/">
-\f1\fs24 \cf0 \strokec2 \
-\pard\pardeftab720\partightenfactor0
-
-\f0\fs29\fsmilli14667 \cf4 \strokec4 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\uc0\u55356 \u57252 
-\f1\fs24 \cf0 \strokec2 \
-
-\f0\fs29\fsmilli14667 \cf4 \strokec4 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0</a>
-\f1\fs24 \cf0 \strokec2 \
-\pard\pardeftab720\partightenfactor0
-
-\f0\fs29\fsmilli14667 \cf0 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf5 \strokec5 <a href="https://www.google.com/">
-\f1\fs24 \cf0 \strokec2 \
-\pard\pardeftab720\partightenfactor0
-
-\f0\fs29\fsmilli14667 \cf5 \strokec5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a01\uc0\u65039 \u8419 
-\f1\fs24 \cf0 \strokec2 \
-
-\f0\fs29\fsmilli14667 \cf5 \strokec5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0</a>
-\f1\fs24 \cf0 \strokec2 \
-\pard\pardeftab720\partightenfactor0
-
-\f0\fs29\fsmilli14667 \cf0 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf6 \strokec6 <a href="https://www.google.com/">
-\f1\fs24 \cf0 \strokec2 \
-\pard\pardeftab720\partightenfactor0
-
-\f0\fs29\fsmilli14667 \cf6 \strokec6 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a02\uc0\u65039 \u8419 
-\f1\fs24 \cf0 \strokec2 \
-
-\f0\fs29\fsmilli14667 \cf6 \strokec6 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0</a>
-\f1\fs24 \cf0 \strokec2 \
-\pard\pardeftab720\partightenfactor0
-
-\f0\fs29\fsmilli14667 \cf0 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf7 \strokec7 <a href="https://run.pavlovia.org/IPWan/MathEdu1-g1-exp3-20260505">
-\f1\fs24 \cf0 \strokec2 \
-\pard\pardeftab720\partightenfactor0
-
-\f0\fs29\fsmilli14667 \cf7 \strokec7 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a03\uc0\u65039 \u8419 
-\f1\fs24 \cf0 \strokec2 \
-
-\f0\fs29\fsmilli14667 \cf7 \strokec7 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0</a>
-\f1\fs24 \cf0 \strokec2 \
-\pard\pardeftab720\partightenfactor0
-
-\f0\fs29\fsmilli14667 \cf0 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0</div>
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0<div class="footer">
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0<p>\uc0\u22283 \u31435 \u25919 \u27835 \u22823 \u23416 \u35486 \u38899 \u26280 \u24515 \u29702 \u35486 \u35328 \u32156 \u21512 \u23526 \u39511 \u23460  \cf3 \strokec3 2026 May\cf0 \strokec2 </p>
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0</div>
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0</div>
-\f1\fs24 \
-\
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0<script>
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0// \uc0\u31777 \u21934 \u30340 \u40670 \u25802 \u21453 \u39243 
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0document.querySelectorAll('.demo-button').forEach(button => \{
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0button.addEventListener('click', function() \{
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0this.style.transform = 'translateY(0)';
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0setTimeout(() => \{
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0this.style.transform = '';
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}, 100);
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\});
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\});
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 \'a0\'a0\'a0\'a0</script>
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 </body>
-\f1\fs24 \
-
-\f0\fs29\fsmilli14667 </html>
-\f1\fs24 \
-}
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小一數學教育實驗網頁索引</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f5f5f5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+            padding: 2rem;
+        }
+
+        .container {
+            text-align: center;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 4rem;
+            color: #7f8c8d;
+            font-weight: 300;
+        }
+
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .demo-button {
+            padding: 3rem 2rem;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 3rem;
+            font-weight: normal;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 200px;
+            color: white;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .demo-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            border-color: #bbb;
+        }
+
+        .demo-button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .button-mic {
+            background: #e74c3c;
+            border-color: #c0392b;
+        }
+
+        .button-mic:hover {
+            background: #c0392b;
+        }
+
+        .button-one {
+            background: #3498db;
+            border-color: #2980b9;
+        }
+
+        .button-one:hover {
+            background: #2980b9;
+        }
+
+        .button-two {
+            background: #2ecc71;
+            border-color: #27ae60;
+        }
+
+        .button-two:hover {
+            background: #27ae60;
+        }
+
+        .button-three {
+            background: #9b59b6;
+            border-color: #8e44ad;
+        }
+
+        .button-three:hover {
+            background: #8e44ad;
+        }
+
+        .footer {
+            margin-top: 4rem;
+            color: #95a5a6;
+            font-size: 1rem;
+            font-weight: 300;
+        }
+
+        /* 平板橫屏優化 */
+        @media (orientation: landscape) and (min-width: 768px) and (max-width: 1024px) {
+            body {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+                margin-bottom: 0.5rem;
+            }
+            
+            .subtitle {
+                font-size: 1.2rem;
+                margin-bottom: 2rem;
+            }
+            
+            .button-grid {
+                gap: 3rem;
+                max-width: 1000px;
+            }
+            
+            .demo-button {
+                min-height: 160px;
+                font-size: 2.5rem;
+                padding: 2rem 1.5rem;
+            }
+            
+            .footer {
+                margin-top: 2rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* 手機直屏備用 */
+        @media (max-width: 767px) {
+            .button-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+                max-width: 400px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .demo-button {
+                min-height: 120px;
+                font-size: 2rem;
+            }
+        }
+
+        /* 大屏幕優化 */
+        @media (min-width: 1025px) {
+            .button-grid {
+                gap: 6rem;
+            }
+            
+            .demo-button {
+                min-height: 220px;
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>小一數學教育實驗</h1>
+        <p class="subtitle">請選擇實驗分頁</p>
+        
+        <div class="button-grid">
+            <a href="https://www.google.com/" class="demo-button button-mic" target="_blank">
+                🎤
+            </a>
+            <a href="https://www.google.com/" class="demo-button button-one" target="_blank">
+                1️⃣
+            </a>
+            <a href="https://www.google.com/" class="demo-button button-two" target="_blank">
+                2️⃣
+            </a>
+            <a href="https://run.pavlovia.org/IPWan/MathEdu1-g1-exp3-20260505" class="demo-button button-three" target="_blank">
+                3️⃣
+            </a>
+        </div>
+        
+        <div class="footer">
+            <p>國立政治大學語音暨心理語言綜合實驗室 2026 May</p>
+        </div>
+    </div>
+
+    <script>
+        // 簡單的點擊反饋
+        document.querySelectorAll('.demo-button').forEach(button => {
+            button.addEventListener('click', function() {
+                this.style.transform = 'translateY(0)';
+                setTimeout(() => {
+                    this.style.transform = '';
+                }, 100);
+            });
+        });
+    </script>
+</body>
+</html>
